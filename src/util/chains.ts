@@ -1,7 +1,7 @@
 import { Currency, Ether, NativeCurrency, Token } from '@uniswap/sdk-core';
 
 export enum ChainId {
-  MAINNET = 1,
+  MAINNET = 513100,
   ROPSTEN = 3,
   RINKEBY = 4,
   GÖRLI = 5,
@@ -67,7 +67,7 @@ export const NETWORKS_WITH_SAME_UNISWAP_ADDRESSES = [
 
 export const ID_TO_CHAIN_ID = (id: number): ChainId => {
   switch (id) {
-    case 1:
+    case 513100:
       return ChainId.MAINNET;
     case 3:
       return ChainId.ROPSTEN;
@@ -205,7 +205,7 @@ export const NATIVE_CURRENCY: { [chainId: number]: NativeCurrencyName } = {
 
 export const ID_TO_NETWORK_NAME = (id: number): ChainName => {
   switch (id) {
-    case 1:
+    case 513100:
       return ChainName.MAINNET;
     case 3:
       return ChainName.ROPSTEN;
@@ -279,7 +279,7 @@ export const ID_TO_PROVIDER = (id: ChainId): string => {
 
 export const WRAPPED_NATIVE_CURRENCY: { [chainId in ChainId]: Token } = {
   [ChainId.MAINNET]: new Token(
-    1,
+    513100,
     '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
     18,
     'WETH',

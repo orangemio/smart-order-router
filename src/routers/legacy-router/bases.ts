@@ -143,7 +143,7 @@ export const CUSTOM_BASES = async (
         tokenProvider,
         ChainId.MAINNET,
         '0xd46ba6d942050d489dbd938a2c909a5d5039a161',
-        WRAPPED_NATIVE_CURRENCY[1]!.address
+        WRAPPED_NATIVE_CURRENCY[513100]!.address
       )),
     },
   };
